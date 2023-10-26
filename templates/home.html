@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .App {
+            text-align: center;
+            background-image: url("https://img.freepik.com/premium-vector/abstract-modern-futuristic-white-wavy-with-blurred-light-curved-lines-background_41814-392.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697328000&semt=ais");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        textarea{
+            margin-top: 10px;
+            padding: 5px;
+            width: 60vw;
+        }
+        ::-webkit-input-placeholder {
+            padding: 5px; /* Adjust the padding to match the textarea's padding */
+        }
+        :-ms-input-placeholder {
+            padding: 5px; /* Adjust the padding to match the textarea's padding */
+        }
+        ::-ms-input-placeholder {
+            padding: 5px; /* Adjust the padding to match the textarea's padding */
+        }
+        #btn{
+            margin: 5px;
+            padding: 5px;
+            color: white;
+            background-color: black;
+            font-size: larger;
+            width: fit-content;
+            border: 1px solid gray;
+            border-radius: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="App">
+        <h1 class="pt-5 text-4xl my-2 font-extrabold dark:text-white">Spam Detection</h1>
+    <form method="POST" clas="form">
+
+        <textarea  type="text" name="inp" id="message" cols="30" rows="12"
+        placeholder="Write your email..."
+        className="mt-3 px-1 form-textarea resize-none w-auto shadow-sm rounded border-black-300 bg-gray-100 placeholder-gray-300 focus:border-black-400 focus:ring-black-400"
+        ></textarea> <br>
+        <input type="submit" name="submit" id="btn"></input>
+    </form>
+    <h1 class="output text-4xl py-5 ">{{message}}</h1>
+    </div>
+</body>
+</html>

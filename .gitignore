@@ -1,0 +1,6 @@
+env/
+results/
+test-mails-ham/
+test-mails-spam/
+train-mails-ham/
+train-mails-spam/

@@ -1,0 +1,6 @@
+- type: web
+  name: spam-detection-app
+  buildCommand: pip install -r requirements.txt
+  startCommand: python spam_detection.py
+  env: python-3.8
+  useDocker: true
